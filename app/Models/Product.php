@@ -8,4 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+
+    /***************************************************
+     ***************** #Relations **********************
+     ****************** #Start *************************/
+    public function content()
+    {
+        return $this->belongsTo(Content::class , "content_id");
+    }
+    /***************************************************
+     ***************** #Relations **********************
+     ****************** #End *************************/
+
+    public static function Get_new_product()
+    {
+        return self::query()->take(6)->get();
+    }
+
 }

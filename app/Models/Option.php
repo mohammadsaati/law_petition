@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Option extends Model
 {
     use HasFactory;
+
+    public static function Get_main_image()
+    {
+        return self::query()->where("name" , "==" , "main_image")->first();
+    }
 }
