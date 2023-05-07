@@ -18,7 +18,8 @@ class HomeController extends Controller
     public function index(CategoryFilter $categoryFilter)
     {
         $data =  $this->service->homeData($categoryFilter);
+        $data["title"] = "new page";
 
-        return view("layouts.layout" , compact("data"));
+        return view("Home" , compact("data"));
     }
 }
