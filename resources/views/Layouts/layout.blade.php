@@ -14,9 +14,12 @@
     <body>
 {{--        header component to  render header--}}
         <x-headerComponent />
+        <x-mainImage />
         @yield("content")
 
-
+{{--        footer component render hear--}}
+        <br/><br/><br/><br/>
+        <x-footerComponent />
         <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
         <script>
             @yield("scripts" , "")
