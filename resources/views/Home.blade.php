@@ -2,6 +2,8 @@
 @section("title" , $data["title"])
 
 @section("content")
+
+    <x-mainImage />
     <div class="container mt-4">
 
         <div class="row">
@@ -33,7 +35,7 @@
                                     </div>
 
                                     <div class="col-4 mt-3">
-                                        <a href="#" class="btn btn-success btn-sm">
+                                        <a href="{{ route('product.show' , $product->code) }}" class="btn btn-success btn-sm">
                                             <i class="bi bi-bag-check-fill"></i>
                                             خرید
                                         </a>

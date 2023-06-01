@@ -3,28 +3,28 @@
         <div class="row flex justify-content-between align-items-center">
             <div class="col-xl-2 col-lg-3 col-sm-3">
                 <div>
-                    <img src="svg/msg.png" class="img-fluid w-50" >
+                    <img src="{{ asset('svg/msg.png') }}" class="img-fluid w-50" >
                 </div>
                 <p class="text-secondary small mt-4">مشاوره تخصصی</p>
             </div>
 
             <div class="col-xl-2 col-lg-3 col-sm-3">
                 <div>
-                    <img src="svg/call.png" class="img-fluid w-50" >
+                    <img src="{{ asset('svg/call.png') }}" class="img-fluid w-50" >
                 </div>
                 <p class="text-secondary small mt-4">مشاوره تلفنی</p>
             </div>
 
             <div class="col-xl-2 col-lg-3 col-sm-3">
                 <div>
-                    <img src="svg/binans.png" class="img-fluid w-50" >
+                    <img src="{{ asset('svg/binans.png') }}" class="img-fluid w-50" >
                 </div>
                 <p class="text-secondary small mt-4">هزینه ی با صرفه</p>
             </div>
 
             <div class="col-xl-2 col-lg-3 col-sm-3">
                 <div>
-                    <img src="svg/time.png" class="img-fluid w-50" >
+                    <img src="{{ asset('svg/time.png') }}" class="img-fluid w-50" >
                 </div>
                 <p class="text-secondary small mt-4">صرفه جویی در زمان</p>
             </div>
@@ -104,16 +104,16 @@
                     </div>
                     <div class="text-start">
                         <div class="btn bg-light btn-sm p-0" style="width: 8%">
-                            <img src="svg/gapp.png" class="img-fluid"/>
+                            <img src="{{ asset('svg/gapp.png') }}" class="img-fluid"/>
                         </div>
                         <div class="btn bg-light btn-sm p-0" style="width: 8%">
-                            <img src="svg/bazar.jpg" class="img-fluid"/>
+                            <img src="{{ asset('svg/bazar.jpg') }}" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                <img src="svg/mapp.svg" class="img-fluid" />
+                <img src="{{ asset('svg/mapp.svg') }}" class="img-fluid" />
             </div>
         </div>
         <br/><br>

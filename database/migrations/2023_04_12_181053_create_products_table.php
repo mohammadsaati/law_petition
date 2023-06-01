@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string("code")->unique();
             $table->integer("price");
             $table->integer("off_price")->nullable();
             $table->dateTime("off_deadline")->nullable();
