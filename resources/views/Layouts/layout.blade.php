@@ -14,7 +14,7 @@
     <body>
 {{--        header component to  render header--}}
         <x-headerComponent />
-        <x-mainImage />
+
         @yield("content")
 
 {{--        footer component render hear--}}
