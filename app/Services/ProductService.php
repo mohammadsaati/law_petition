@@ -19,7 +19,7 @@
         $data = [];
         $data["product"] = $product;
 
-        $data["related_products"] = $this->get_single_product($product);
+        $data["related_products"] = $this->get_related_products($product);
 
         $data["related_contents"] = $this->get_related_content($product);
 
@@ -35,6 +35,9 @@
 
      private function get_related_content(Product $product): \Illuminate\Database\Eloquent\Collection|array
      {
-         return Content::query()->where("category_id" , $product->content->category_id)->get();
+         return Content::query()->where([
+             ["category_id" , "=" , $product->content->category_id] ,
+             ["type" , "=" , "post"]
+         ])->get();
      }
  }
