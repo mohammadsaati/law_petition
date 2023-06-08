@@ -16,6 +16,11 @@ class Product extends Model
     {
         return $this->belongsTo(Content::class , "content_id");
     }
+
+    public function banners()
+    {
+        return $this->hasMany(Banner::class , "product_id");
+    }
     /***************************************************
      ***************** #Relations **********************
      ****************** #End *************************/
